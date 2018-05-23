@@ -12,6 +12,7 @@
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{siunitx}
+%\usepackage{hyperref}
 \graphicspath{ {./images/}}
 
 \usetikzlibrary{automata,positioning}
@@ -213,7 +214,7 @@ The magnitude of the cross product is given as $|\vec{u} \times \vec{v}| = |\vec
 So one of the most important and useful concepts in many fields, most notably physics and mathematics, is the concept of vectors. When we call something a vector $\vec{v}$, then we mean that "v" has both a magnitude, or value like speed, and direction. Basically, we give this vector a length, or value, equal to the value of "v". Here comes to play another extremely important concept in vectors. That is, since a vector is just an arrow, we can describe this vector using 2 other perpendicular vectors. This is called "decomposing" a vector. There are infinitely many ways to decompose a vector, which allows us to deal with so many situations, such as a gravitational force vector decomposed along the inclined plane. Generally, we like to represent our vectors in the Cartesian plane, or $<x_\text{val},y_\text{val}>$. \\
 \begin{figure}[!h]
 \center
-    \includegraphics[width=.6\textwidth]{Vectors1.jpg}
+    \includegraphics[width=.4\textwidth]{Vectors1.jpg}
     \caption{This image represents how you can decide whatever plane you wish to decompose the vector along. It's important to recognize that the uv-plane can be any arbitrary plane.}
 \end{figure}
 \\
@@ -265,7 +266,6 @@ Why did I pull out an $r^2$ from the denominator? Since my $r >> d$, I know that
 =& \frac{1}{4\pi\epsilon}\frac{2Qd}{r^3}\hat{x}
 \end{align}\\ \
 Recall that this applies to the situation described above. We can generalize this idea by creating a dipole moment vector, defined $\vec{\rho} = Q\vec{d}$, where $\vec{d}$ points from the negative pole to the positive pole of the dipole. This pole direction is the direction of the electric field along its axis around the dipole (Where the electric field between the poles is simply from the positive end to the negative end (opposite direction)). Then our electric field along the axis is condensed to: $$\frac{1}{4\pi\epsilon}\frac{2\vec{\rho}}{r^3}$$\\
-\\
 Now I want to go back to discussing the mathematical applications of integrals to physics. As was previously discussed, we can represent our electric field as $$\vec{E} = \frac{1}{4\pi\epsilon}\int \frac{dq}{|r|^2}\hat{r}$$The idea behind this description of the electric field is that I want to sum up all the effects of every infinitesimal small piece of charge dq. However, you cannot simply integrate on $dq$ because every $dq$ may have a different position, leading to a dependence on the $r$. In many cases, you can represent $dq$ by $dq = \rho *dV$. $\rho$ would be the charge density as $Q/V$, or charge per volume. However, depending on the symmetry, you can have a different representation for that charge distribution. For example, in a thin rod of charge $Q$ and length $L$, you can utilize the charge distribution in terms of its length (since this rod is thin and uniform and symmetric), $\rho = Q/L$. By understanding this, you can apply this to many problems. One example I will cover is the electric field due to an infinite plate of charge of uniform charge density $\rho$. Note that just because it has a fixed density does not mean that it will have infinite charge because $\rho * \infty$ makes no physical sense (we are doing physics, after all. So infinity is purely a mathematical tool). Thus, let me describe the electric field due to each individual charge at a distance $d$ from the plate: $$\vec{E} = \frac{1}{4\pi\epsilon}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{\rho}{|r^2|}\hat{r}dA$$This expression is a tad too complicated for our purposes, since it involves understanding of the double integral. However, we can apply an interesting symmetry trick. A plane of charge is simply an infinite amount of infinite rods on top of each other. So, we can apply our expression for the infinite rod here and integrate along only one direction. Let us choose our rods to be lined up so that they line up along the z axis:
 %%%%%% INSERT FIGURE HERE %%%%%%
 \\
@@ -294,7 +294,7 @@ Our expression for the electric field due to an infinite rod is $$\vec{E}_{inf r
 \pagebreak
 
 \section{Maxwell's Equations}
-This section goes in depth in explaining the implications and intuitions for understanding and using Maxwell's Equations. First, I will write down the 4 equations governing electric and magnetic fields:
+This section goes in depth in explaining the implications and intuitions for understanding and using Maxwell's Equations. First, I will write down the 4 equations governing electric and magnetic fields. Note: \textbf{Boldfaced} variables simply mean that they're vectors:
 \begin{align*}
     \oiint_{\partial \Omega} \VF{E} \cdot \VF{n} \dif S
     &= \frac{1}{\epsilon}\iiint_{\Omega} \rho \dif V\\
@@ -306,14 +306,18 @@ This section goes in depth in explaining the implications and intuitions for und
     &= \iint_\Sigma \VF{J} \cdot \dif \VF{S} + \frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}
 \end{align*}\\
 \subsection{Gauss' Law for Electric Fields}
-$$\oiint_{\partial \Omega} \VF{E} \cdot \VF{n} \dif S = \frac{1}{\epsilon}\iiint_{\Omega} \rho \dif V$$\\
-\\
+
+\begin{flalign*}
+&\oiint_{\partial \Omega} \VF{E} \cdot \VF{n} \dif S = \frac{1}{\epsilon}\iiint_{\Omega} \rho \dif V&
+\end{flalign*}
+
 When we learn physics, we don't aim to just learn to utilize and memorize the equations. Rather, by understanding intuitively how the concepts are incorporated and how the different operators in the equation work together, you can understand exactly what is being modeled, which also allows you to be able to construct models for more situations.\\
 With that being said, let us discuss Gauss' Law. The expression is very complex, but let us dumb it down to a very simple series of explanations. When we see a loop in the double integral, that means a closed surface integral. This is the same as saying: I want to find the flux through the entire surface (all faces). In the expression, we have $$\VF{E} \cdot \VF{n} \dif S$$Know that $\VF{n}$ is the unit vector pointing orthogonal (perpendicular) to the surface. In addition, when we do a dot product $\VF{E} \cdot \VF{n}$, we are saying what is the component of the electric field going perpendicular to the surface. This is multiplied by $\dif S$, or a small piece of area on the surface. So we can visualize this as similar to saying $$\VF{E} \cdot \dif \VF{A}$$which we know to be the definition of the electric flux. Then, the left hand side of Gauss' Law simply says: I want to calculate the entire electric flux through a closed surface. In Gauss' Law, this closed surface is the surface you construct. On the right side, we have $$\frac{1}{\epsilon}\iiint_{\Omega} \rho \dif V$$$\rho$ is our charge density, so by doing a triple integral over our surface, we are saying: What is the charge enclosed by our surface? So the main idea of Gauss' Law is that it relates the electric flux to the charge enclosed. Notice that to utilize Gauss' Law, you should know what the electric field looks like. This is so that you can know how to use ideas like symmetry to get a simple surface where the electric field goes through at a constant angle (hopefully perpendicular) and is constant. If it is constant, then the integral expression can be eliminated if you know the surface area of your surface. \\
 \\
 \subsection{Gauss' law for Magnetic Fields}
-$$\oiint_{\partial \Omega} \VF{B} \cdot \VF{n} \dif S = 0$$\\
-\\
+\begin{flalign*}
+&\oiint_{\partial \Omega} \VF{B} \cdot \VF{n} \dif S = 0&
+\end{flalign*}
 Looking at the left side, this is simply the same expression for Gauss' Law for electric fields except replaced with magnetic flux. However, notice how the right hand side is 0. When we think about magnetic fields, we will always have loops. After all, unlike electric fields, magnetic fields always have a north and south pole, so the magnetic field cannot go off indefinitely without ever returning. As a result, when we talk about the closed surface integral, or the flux through the entire surface, we include both the magnetic field going out and the magnetic field coming back. These always cancel out (unless there are magnetic monopoles\footnote{Magnetic Monopoles are an active field of research. In fact, this version of Gauss' Law indicates that if there were monopoles, we would have a non-zero magnetic flux. There is no evidence to suggest that magnetic monopoles cannot exist.}), which leads to the 0.
 
 \end{document}
