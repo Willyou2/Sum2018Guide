@@ -12,6 +12,8 @@
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{siunitx}
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 %\usepackage{hyperref}
 \graphicspath{ {./images/}}
 
@@ -171,7 +173,7 @@ Just a vector describing radial direction. Conveniently, this is also $\vec{r} =
 \item[Coulomb (C)]
 SI unit of measurement for charge
 
-\item[$\epsilon$]
+\item[Epsilon ($\epsilon$)]
 Constant of dielectric permitivity. Larger epsilons lead to... You'll find out later in class :)
 
 \end{description} 
@@ -185,7 +187,7 @@ $\hat{i}, \hat{j}, \hat{k} = $ x, y, z unit vectors: $<1,0,0>, <0,1,0>, <0,0,1>$
 \subsection{Important Concepts}
 \textbf{Coulomb's Law}: $\vec{F}_{\text{Coulomb}} = \frac{1}{4\pi\epsilon} \frac{Q_1 Q_2}{|r|^2} \hat{r}$\\
 \\
-\textbf{Superposition Principle}: A principle that describes that the net effect at a point in space is the net sum of all the individual effects from all sources at that point. This can be simplified to our description of electric fields. The net electric field at a point is the sum of all individual electric fields at that point: $\vec{E}_{net} = \Sigma \vec{E}_i$.\\
+\textbf{Superposition Principle}: A principle that describes that the net effect at a point in space is the net sum of all the individual effects from all sources at that point. This can be simplified to our description of electric fields. The net electric field at a point is the sum of all individual electric fields at that point: $\vec{E}_{net} = \sum\limits_{i}\vec{E}_i$.\\
 \\
 \textbf{Conservative System}: In a conservative system, all energy is conserved. This also means that there are no external forces involved, since the source and effect is all contained within the system. For example, a system that has 2 charges and only has the fields due to those two charges is conservative. However, if you enclose the effects of both but only one of those charges, then the electric field due to the charge not in your system is an "external" effect.\\
 
@@ -223,15 +225,70 @@ Now suppose I have some arbitrary vector that I know the magnitude of and direct
 
 \pagebreak
 
+\section{Verification and Approximation}
+In physics, an extremely important issue when dealing with new equations or formulae is the necessity to be able to verify its validity. However, if an equation is not immediately clear, there are several ideas that we apply within electricity and magnetism to understand an equation. These are all incorporated within the context of the next section.
+\subsection{Does it Make Sense?}
+The idea of whether or not an equation makes sense is quite general. But, you should know several ideas when approaching this question. One is utilizing dimensional analysis. This is a useful tool because if your equation does not have the right units, it clearly cannot be correct. By representing each variable as its SI unit form, you can perform the dimensional analysis:\\
+\\
+Example:
+\begin{align*}
+	\vec{E} =& \frac{1}{4\pi\epsilon}\frac{2Qd}{|r|^3}\hat{r}\\
+	=& \frac{(C)^1(m)^1}{m^3}\\
+	=& (C)^1(m)^1(m)^{-3}\\
+	=& (C)^1(m)^{-2} \ \ \ \checkmark \text{Verified}
+\end{align*}\\
+So, clearly, the equation for the dipole electric field (along axis) surely holds correct units. At this point, one may think that it is more beneficial to just verify it by re-deriving the equation. However, there are several issues with this. One, it is not always true that you will encounter easily-derivable equations. In addition, deriving an equation can still lead to errors, which will not change the issue. \\
+\\
+Following this, let us discuss the next method of evaluation. In physics, especially electricity and magnetism, the use of extremeties is a great way of understanding the equation's validity. This is because while we cannot necessarily understand the more complex picture, by going to extremities such as $\infty$, we can visualize and make sense of an equation.\\
+\\
+Example:
+\begin{equation*}
+	\vec{E}_{\text{ring}} = \frac{1}{4\pi\epsilon}\frac{Q}{2\pi R}\frac{2\pi R z}{(R^2 + z^2)^{3/2}}\hat{z}
+\end{equation*}\\
+At first, the ring equation is very hard to visualize or interpret. However, let us imagine condensing the ring into a singular point, then it should behave as a point charge. In our equation, this means we let the radius $R$ approach $0$.\\
+\begin{align*}
+	\vec{E}_{\text{ring}} &= \frac{1}{4\pi\epsilon}\frac{Qz}{(0 + z^2)^{3/2}}\hat{z}\\
+	&= \frac{1}{4\pi\epsilon}\frac{Qz}{z^3}\hat{z}\\
+	&= \frac{1}{4\pi\epsilon}\frac{Q}{z^2}\hat{z} \ \ \ \checkmark \text{Verified}
+\end{align*}
+
+\pagebreak
+
+\section{Superposition Principle}
+The superposition principle is one of the most beautiful concepts in physics. It is very hard to convey just how amazing and versatile it is without some examples. To begin with, the simple idea of the superposition principle (Let us discuss this in the context of an electric field for simplicity sake) is that net electric field at any point is the sum of all individual electric fields at that point:\\
+\begin{equation*}
+	\vec{E}_{\text{net}} = \sum\limits_{i} \vec{E}_i
+\end{equation*}\\
+This also applies to other ideas such as charges:\\
+\begin{equation*}
+	Q_\text{Total} = \sum\limits_{i} Q_i
+\end{equation*}\\
+Now charges are not exactly vectors, but charges emanate electric fields, so the sum of all charges should be the total charge. Now, we can demonstrate just how beautiful the superposition principle is. Consider a very convoluted problem: I have a circle of uniform charge distribution $\sigma$ but I cut out 2 adjacent holes in it. What is my electric field along the x axis?\\
+\begin{figure}[ht]
+\center
+\includegraphics[width=.4\textwidth]{Superposition1.jpg}
+\caption{A visualization of the problem. The inner holes are of radius r, and the rest of the circle is filled with charge.}
+\end{figure}\\
+\\
+On its own, this problem may seem beyond the scope of our understanding. There is symmetry, but it is very convoluted. However, we know that the empty circles technically have 0 charge and the rest as some charge based on our charge density. So, we utilize our idea in the superposition principle. The effects at any point is the sum of all the effects. Now, we have 0 charge in the holes. Alone, this shape is hard to integrate over. But, we can imagine this shape as the sum of a full circle of positive charge and the sum of 2 smaller circles of negative charge. Why can we do this? Let us explain through the charge interpretation. It is as if we are adding positive charge in those circles. But at the same time, we are getting rid of those charges by creating 2 circles of negative charge (equal and opposite). So, our superposition principle says we still have the same situation.\\
+\pagebreak
+\begin{figure}[ht]
+\center
+\includegraphics[width=.4\textwidth]{Superposition2.jpg}
+\caption{We can understand the holes as just being occupied simultaneously by equal and opposite charges. So, combining the positive charges with the uniform density, we have a full circle and combining the negative charges of the same density, we have 2 negatively charged circles.}
+\end{figure}\\
+So all you do is just add the electric field from the circle plus the electric field from the negative circles (position in space still matters, so it's not simply 2 times a negative circle's electric field centered at the origin). But just notice how beautifully superposition principle allows us to approach problems. 
+
+\pagebreak
 \section{Week 1: Charges and Fields}
 
-If you wish to just learn the equations and general concepts, I'd recommend just the first page of this study guide, since it provides that. If you wish for important concepts that will aid you in thinking, then the Week by Week pages will be useful. I should have a section on vectors if that is a concept you wish to review \\
+If you wish to just learn the equations and general concepts, I'd recommend just the first page of this study guide, since it provides that. If you wish for important concepts that will aid you in thinking, then the Week by Week pages will be useful. I should have a section on vectors if that is a concept you wish to review. \\
 \\
 Primarily, let us quickly discuss the importance of understanding the concept of an electric field. While Coulomb's Law is also very important, an important concept that arises from this class is the concept of fields. As Ghosh said, if previously there was no charge, but suddenly there is, there is suddenly a changing of the space around it. When I say the space changes, I mean that there is a field that other charged particles in the space will feel effects from. So, when we talk about the Coulomb field, we talk about the field due to a charged particle. And just like the gravitational field, electric fields due to singular charges are radial.\\
 \\
 \textit{Interesting question: If I have 1 charge then suddenly introduce another charge a light year away, would the effect of the distant charge be instantaneous or take time? If it takes time, how long should it take?}\footnote{Electric fields are essentially a result of travelling photons, so we should expect it to take 1 year for our charge to experience the effect of the distant charge}\\
 \\
-Recall that we learned what an electric field is $\vec{E}$ and Coulombs Law, $\vec{F}_{\text{Coulomb}} = \int \vec{E} dq$. This notation is simply restating the idea of the superposition principle. In fact, we can describe $\vec{E} = \frac{1}{4\pi\epsilon} \int \frac{dq}{|r|^2} \hat{r}$. When we say  $\vec{E} = \frac{1}{4\pi\epsilon} \int \frac{dq}{|r|^2}\hat{r}$, we are saying that what is the net electric field at this point due to all charges. However, in order for the integral to be practical, you should generalize the form. This is quite useful for more convoluted problems. However, when you deal with physical point charges, it's more useful to utilize the general principle (superposition): $\vec{E}_{\text{net}} = \Sigma \vec{E}_i$. This is why you shouldn't ever need to use an integral to deal with problems like Ghosh's example: 4 charges are placed at the edges of a box, and find the force on the charge at the bottom left corner (Which can either be envisioned as the force on that charge due to each of the other charges in the box or the net electric field due to the other charges in the box times the charge you care about).\\
+Recall that we learned what an electric field is $\vec{E}$ and Coulombs Law, $\vec{F}_{\text{Coulomb}} = \int \vec{E} dq$. This notation is simply restating the idea of the superposition principle. In fact, we can describe $\vec{E} = \frac{1}{4\pi\epsilon} \int \frac{dq}{|r|^2} \hat{r}$. When we say  $\vec{E} = \frac{1}{4\pi\epsilon} \int \frac{dq}{|r|^2}\hat{r}$, we are saying that what is the net electric field at this point due to all charges. However, in order for the integral to be practical, you should generalize the form. This is quite useful for more convoluted problems. However, when you deal with physical point charges, it's more useful to utilize the general principle (superposition): $\vec{E}_{\text{net}} = \sum\limits_{i} \vec{E}_i$. This is why you shouldn't ever need to use an integral to deal with problems like Ghosh's example: 4 charges are placed at the edges of a box, and find the force on the charge at the bottom left corner (Which can either be envisioned as the force on that charge due to each of the other charges in the box or the net electric field due to the other charges in the box times the charge you care about).\\
 \begin{figure}[ht]
 \center
 \includegraphics[width=.4\textwidth]{Vectors2.jpg}
@@ -267,7 +324,12 @@ Why did I pull out an $r^2$ from the denominator? Since my $r >> d$, I know that
 \end{align}\\ \
 Recall that this applies to the situation described above. We can generalize this idea by creating a dipole moment vector, defined $\vec{\rho} = Q\vec{d}$, where $\vec{d}$ points from the negative pole to the positive pole of the dipole. This pole direction is the direction of the electric field along its axis around the dipole (Where the electric field between the poles is simply from the positive end to the negative end (opposite direction)). Then our electric field along the axis is condensed to: $$\frac{1}{4\pi\epsilon}\frac{2\vec{\rho}}{r^3}$$\\
 Now I want to go back to discussing the mathematical applications of integrals to physics. As was previously discussed, we can represent our electric field as $$\vec{E} = \frac{1}{4\pi\epsilon}\int \frac{dq}{|r|^2}\hat{r}$$The idea behind this description of the electric field is that I want to sum up all the effects of every infinitesimal small piece of charge dq. However, you cannot simply integrate on $dq$ because every $dq$ may have a different position, leading to a dependence on the $r$. In many cases, you can represent $dq$ by $dq = \rho *dV$. $\rho$ would be the charge density as $Q/V$, or charge per volume. However, depending on the symmetry, you can have a different representation for that charge distribution. For example, in a thin rod of charge $Q$ and length $L$, you can utilize the charge distribution in terms of its length (since this rod is thin and uniform and symmetric), $\rho = Q/L$. By understanding this, you can apply this to many problems. One example I will cover is the electric field due to an infinite plate of charge of uniform charge density $\rho$. Note that just because it has a fixed density does not mean that it will have infinite charge because $\rho * \infty$ makes no physical sense (we are doing physics, after all. So infinity is purely a mathematical tool). Thus, let me describe the electric field due to each individual charge at a distance $d$ from the plate: $$\vec{E} = \frac{1}{4\pi\epsilon}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\frac{\rho}{|r^2|}\hat{r}dA$$This expression is a tad too complicated for our purposes, since it involves understanding of the double integral. However, we can apply an interesting symmetry trick. A plane of charge is simply an infinite amount of infinite rods on top of each other. So, we can apply our expression for the infinite rod here and integrate along only one direction. Let us choose our rods to be lined up so that they line up along the z axis:
-%%%%%% INSERT FIGURE HERE %%%%%%
+\pagebreak
+\begin{figure}[ht]
+\center
+\includegraphics[width=.3\textwidth]{images/Week1pic3.jpg}
+\caption{The image is a graphical representation of this method of integrating along an infinite plane. Understand that there are many ways of approaching this problem (i.e. you can integrate along an \textbf{infinite} plane by splitting it into an infinite number of concentric rings.}
+\end{figure}\\
 \\
 Our expression for the electric field due to an infinite rod is $$\vec{E}_{inf rod} = \frac{1}{4\pi\epsilon}\frac{2\rho}{r}\hat{r}$$Recall that $\rho$ is the same as $\frac{dq}{dA}$. So we still need to integrate along the z direction. We can apply another interesting thing about symmetry. Since the rods are infinite, we can imagine each rod as a point charge having the electric field of the rod, each charge placed along the midpoint. Then, our $r$ is very simple: $r = \sqrt{y^2 + d^2}$, where there is no $x$ dependence. Finally, let us rewrite our expression: $$\vec{E} = \frac{1}{4\pi\epsilon}\int_{-\infty}^{\infty} \frac{2\rho}{\sqrt{y^2 + d^2}}\hat{r} dy$$We also know that our $\hat{r} = \frac{\vec{r}}{|\vec{r}|} = \frac{1}{\sqrt{y^2 + d^2}}<d,\ y>$. However, again, because of symmetry, we have that our $y$ components should cancel out since the plane is symmetric along positive and negative $y$ axis. So, we only care about the $z$ component: $\vec{z} = \frac{d}{\sqrt{y^2 + d^2}}\hat{z}$. Let us once again rewrite our integral: $$\vec{E} = \frac{1}{4\pi\epsilon}\int_{-\infty}^{\infty} \frac{2\rho d}{y^2 + d^2} dy$$You can then use trigonemtric substitution. As a result of some calculations, the expression condenses to: $$\big|_{-\pi/2}^{\pi/2} 2\rho \theta = \frac{\rho}{2\epsilon}$$
 
