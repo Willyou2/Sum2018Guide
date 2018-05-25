@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  24 MAY 2018 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  25 MAY 2018 13:34
 entering extended mode
 **"C:/Users/William Cen/Sum2018Guide/33142Summer2018TANotes.tex"
 ("C:/Users/William Cen/Sum2018Guide/33142Summer2018TANotes.tex"
@@ -1251,27 +1251,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--337
 
  []
 
-[10] [11 <./images/Week1pic3.jpg>] [12] [13] [14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+[10]
+<images/Week1pic4.jpg, id=57, 2457.18pt x 1991.44pt>
+File: images/Week1pic4.jpg Graphic file (type jpg)
+<use images/Week1pic4.jpg>
+Package pdftex.def Info: images/Week1pic4.jpg  used on input line 342.
+(pdftex.def)             Requested size: 140.92792pt x 114.19392pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--346
+
+ []
+
+[11 <./images/Week1pic3.jpg>] [12 <./images/Week1pic4.jpg>] [13] [14] [15]
+[16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--382
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
 
  []
 
-[17] [18] (33142Summer2018TANotes.aux) ) 
+[19] [20] (33142Summer2018TANotes.aux) ) 
 Here is how much of TeX's memory you used:
- 25159 strings out of 493303
- 536199 string characters out of 3127172
+ 25164 strings out of 493303
+ 536311 string characters out of 3127172
  540043 words of memory out of 3000000
- 28352 multiletter control sequences out of 15000+200000
+ 28356 multiletter control sequences out of 15000+200000
  543598 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,66p,10426b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1294,9 +1306,9 @@ sfonts/cm/cmsy7.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/William Cen/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/William Cen
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb>
-Output written on 33142Summer2018TANotes.pdf (18 pages, 938718 bytes).
+Output written on 33142Summer2018TANotes.pdf (20 pages, 1083789 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
