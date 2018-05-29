@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  25 MAY 2018 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  29 MAY 2018 16:35
 entering extended mode
 **"C:/Users/William Cen/Sum2018Guide/33142Summer2018TANotes.tex"
 ("C:/Users/William Cen/Sum2018Guide/33142Summer2018TANotes.tex"
@@ -1113,7 +1113,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 207--214
 
  []
@@ -1123,7 +1123,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--214
 
  []
 
-[2] [3]
+[3]
 <./images/Vectors1.jpg, id=25, 2457.18pt x 3276.24pt>
 File: ./images/Vectors1.jpg Graphic file (type jpg)
 <use ./images/Vectors1.jpg>
@@ -1306,7 +1306,7 @@ sfonts/cm/cmsy7.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/William Cen/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/William Cen
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb>
-Output written on 33142Summer2018TANotes.pdf (20 pages, 1083789 bytes).
+Output written on 33142Summer2018TANotes.pdf (20 pages, 1083941 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
