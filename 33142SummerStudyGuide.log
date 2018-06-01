@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  30 MAY 2018 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  1 JUN 2018 13:43
 entering extended mode
-**"C:/Users/William Cen/Sum2018Guide/33142Summer2018TANotes.tex"
-("C:/Users/William Cen/Sum2018Guide/33142Summer2018TANotes.tex"
+**"C:/Users/William Cen/Sum2018Guide/33142SummerStudyGuide.tex"
+("C:/Users/William Cen/Sum2018Guide/33142SummerStudyGuide.tex"
 LaTeX2e <2017-04-15>
 Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
 
@@ -958,8 +958,8 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 \c@partCounter=\count304
 \c@homeworkProblemCounter=\count305
 
-(33142Summer2018TANotes.aux)
-\openout1 = `33142Summer2018TANotes.aux'.
+(33142SummerStudyGuide.aux)
+\openout1 = `33142SummerStudyGuide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
 LaTeX Font Info:    ... okay on input line 153.
@@ -1130,215 +1130,242 @@ File: ./images/Vectors1.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./images/Vectors1.jpg  used on input line 219.
 (pdftex.def)             Requested size: 187.89912pt x 250.50656pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--225
+Underfull \hbox (badness 10000) in paragraph at lines 216--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--225
+Underfull \hbox (badness 10000) in paragraph at lines 216--227
 
  []
 
-[4 <./images/Vectors1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 231--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--245
+[4 <./images/Vectors1.jpg>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 233--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--245
+Underfull \hbox (badness 10000) in paragraph at lines 241--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 241--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
-<./images/Superposition1.jpg, id=32, 2457.18pt x 1493.58pt>
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
+
+ []
+
+<./images/Superposition1.jpg, id=35, 2457.18pt x 1493.58pt>
 File: ./images/Superposition1.jpg Graphic file (type jpg)
 <use ./images/Superposition1.jpg>
-Package pdftex.def Info: ./images/Superposition1.jpg  used on input line 269.
+Package pdftex.def Info: ./images/Superposition1.jpg  used on input line 271.
 (pdftex.def)             Requested size: 187.89912pt x 114.20152pt.
-<./images/Superposition2.jpg, id=33, 2457.18pt x 1593.955pt>
+<./images/Superposition2.jpg, id=36, 2457.18pt x 1593.955pt>
 File: ./images/Superposition2.jpg Graphic file (type jpg)
 <use ./images/Superposition2.jpg>
-Package pdftex.def Info: ./images/Superposition2.jpg  used on input line 277.
+Package pdftex.def Info: ./images/Superposition2.jpg  used on input line 279.
 (pdftex.def)             Requested size: 187.89912pt x 121.87636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--281
+Underfull \hbox (badness 10000) in paragraph at lines 267--283
 
  []
 
-[6 <./images/Superposition1.jpg>] [7 <./images/Superposition2.jpg>]
-<./images/Vectors2.jpg, id=41, 2457.18pt x 2256.43pt>
+[7 <./images/Superposition1.jpg>] [8 <./images/Superposition2.jpg>]
+<./images/Vectors2.jpg, id=44, 2457.18pt x 2256.43pt>
 File: ./images/Vectors2.jpg Graphic file (type jpg)
 <use ./images/Vectors2.jpg>
-Package pdftex.def Info: ./images/Vectors2.jpg  used on input line 294.
+Package pdftex.def Info: ./images/Vectors2.jpg  used on input line 296.
 (pdftex.def)             Requested size: 187.89912pt x 172.53026pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--298
+Underfull \hbox (badness 10000) in paragraph at lines 287--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--298
+Underfull \hbox (badness 10000) in paragraph at lines 287--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--298
+Underfull \hbox (badness 10000) in paragraph at lines 287--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--298
+Underfull \hbox (badness 10000) in paragraph at lines 287--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--298
+Underfull \hbox (badness 10000) in paragraph at lines 287--300
 
  []
 
-[8 <./images/Vectors2.jpg>]
-<images/Week1pic2.jpg, id=49, 2457.18pt x 1284.8pt>
+[9 <./images/Vectors2.jpg>]
+<images/Week1pic2.jpg, id=52, 2457.18pt x 1284.8pt>
 File: images/Week1pic2.jpg Graphic file (type jpg)
 <use images/Week1pic2.jpg>
-Package pdftex.def Info: images/Week1pic2.jpg  used on input line 302.
+Package pdftex.def Info: images/Week1pic2.jpg  used on input line 304.
 (pdftex.def)             Requested size: 187.89912pt x 98.23787pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--307
+Underfull \hbox (badness 10000) in paragraph at lines 301--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--313
+Underfull \hbox (badness 10000) in paragraph at lines 312--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--313
+Underfull \hbox (badness 10000) in paragraph at lines 312--315
 
  []
 
-[9 <./images/Week1pic2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+[10 <./images/Week1pic2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 327--331
 
  []
 
-<images/Week1pic3.jpg, id=53, 2119.92pt x 2115.905pt>
+<images/Week1pic3.jpg, id=56, 2119.92pt x 2115.905pt>
 File: images/Week1pic3.jpg Graphic file (type jpg)
 <use images/Week1pic3.jpg>
-Package pdftex.def Info: images/Week1pic3.jpg  used on input line 333.
+Package pdftex.def Info: images/Week1pic3.jpg  used on input line 335.
 (pdftex.def)             Requested size: 140.92792pt x 140.6381pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--337
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
-[10]
-<images/Week1pic4.jpg, id=57, 2457.18pt x 1991.44pt>
+[11]
+<images/Week1pic4.jpg, id=60, 2457.18pt x 1991.44pt>
 File: images/Week1pic4.jpg Graphic file (type jpg)
 <use images/Week1pic4.jpg>
-Package pdftex.def Info: images/Week1pic4.jpg  used on input line 342.
+Package pdftex.def Info: images/Week1pic4.jpg  used on input line 344.
 (pdftex.def)             Requested size: 140.92792pt x 114.19392pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--346
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
-[11 <./images/Week1pic3.jpg>] [12 <./images/Week1pic4.jpg>]
-<images/Week1pic5.jpg, id=64, 2457.18pt x 2425.06pt>
+[12 <./images/Week1pic3.jpg>] [13 <./images/Week1pic4.jpg>]
+<images/Week1pic5.jpg, id=68, 2457.18pt x 2425.06pt>
 File: images/Week1pic5.jpg Graphic file (type jpg)
 <use images/Week1pic5.jpg>
-Package pdftex.def Info: images/Week1pic5.jpg  used on input line 373.
+Package pdftex.def Info: images/Week1pic5.jpg  used on input line 375.
 (pdftex.def)             Requested size: 140.92792pt x 139.05873pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--376
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--376
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 377--383
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--383
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 379--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--385
+Underfull \hbox (badness 10000) in paragraph at lines 379--387
 
  []
 
-[14 <./images/Week1pic5.jpg>] [15] [16] [17] [18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+[15 <./images/Week1pic5.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 389--391
+
+ []
+
+<images/Week2pic1.jpg, id=75, 2457.18pt x 1610.015pt>
+File: images/Week2pic1.jpg Graphic file (type jpg)
+<use images/Week2pic1.jpg>
+Package pdftex.def Info: images/Week2pic1.jpg  used on input line 397.
+(pdftex.def)             Requested size: 140.92792pt x 92.3221pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--429
+Underfull \hbox (badness 10000) in paragraph at lines 391--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--429
+Underfull \hbox (badness 10000) in paragraph at lines 391--402
 
  []
 
-[21] [22] (33142Summer2018TANotes.aux) ) 
+[16]
+<images/Week2pic2.jpg, id=79, 2457.18pt x 1927.2pt>
+File: images/Week2pic2.jpg Graphic file (type jpg)
+<use images/Week2pic2.jpg>
+Package pdftex.def Info: images/Week2pic2.jpg  used on input line 406.
+(pdftex.def)             Requested size: 140.92792pt x 110.51025pt.
+ [17 <./images/Week2pic1.jpg> <./images/Week2pic2.jpg>] [18] [19] [20]
+[21] [22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--478
+
+ []
+
+[24] [25] (33142SummerStudyGuide.aux) ) 
 Here is how much of TeX's memory you used:
- 25169 strings out of 493303
- 536423 string characters out of 3127172
- 540043 words of memory out of 3000000
- 28360 multiletter control sequences out of 15000+200000
+ 25179 strings out of 493303
+ 536637 string characters out of 3127172
+ 540040 words of memory out of 3000000
+ 28368 multiletter control sequences out of 15000+200000
  543598 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,66p,10426b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/William Cen/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/William Ce
-n/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmex10.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/William Cen/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/William Cen/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
-ers/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr5.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr6.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/William Cen/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/William
- Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/William Cen/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/William Cen
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb>
-Output written on 33142Summer2018TANotes.pdf (22 pages, 1275675 bytes).
+ 55i,13n,66p,10425b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/William Cen/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/William Cen
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/William Cen/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/William Cen/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
+rs/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr5.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/William Cen/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/William 
+Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/William Cen/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/William Cen/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb>
+Output written on 33142SummerStudyGuide.pdf (25 pages, 1537541 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
