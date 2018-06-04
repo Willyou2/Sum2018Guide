@@ -414,28 +414,48 @@ b < r < c\\
 a < r < b\\
 r < a
 \end{align*}
-To begin, we must understand that our reference point is $\infty$, so we must always begin there. For $r > c$, we have a vacuum. In addition, due to the sphere of charge in the center, we have the electric field due to a point charge in a vacuum: $\vec{E} = \frac{1}{4\pi\epsilon_0}\frac{Q}{|r|^2}\hat{r}$. So, the potential outside is given by $$V = -\int_\infty^r \vec{E} \cdot \dif \vec{s}$$Since we are moving along the radial direction and \textbf{opposite} the direction of the field, we have:
+To begin, we must understand that our reference point is $\infty$, so we must always begin there. For $r > c$, we have a vacuum. In addition, due to the sphere of charge in the center, we have the electric field due to a point charge in a vacuum: $\vec{E} = \frac{1}{4\pi\epsilon_0}\frac{Q}{|r|^2}\hat{r}$. So, the potential outside is given by $$V = -\int_\infty^r \vec{E} \cdot \dif \vec{s}$$Since we are moving along the radial direction, we have:
 \begin{align*}
 V &= -\int_\infty^r \vec{E} \cdot \dif \vec{r}\\
-V &= \int_\infty^r E \dif r
+V &= -\int_\infty^r E \dif r
 \end{align*}
 Then, let us evaluate:
 \begin{align*}
-V &= \frac{1}{4\pi\epsilon_0}\int_\infty^r \frac{Q}{r^2}\dif r\\
-V &= \frac{1}{4\pi\epsilon_0}\left(-\frac{Q}{r} \bigg|_\infty^r\right) = \frac{1}{4\pi\epsilon_0}\left(-\frac{Q}{\infty} - \left(-\frac{Q}{r}\right)\right) = \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{r}-0\right)\\
+V &= -\frac{1}{4\pi\epsilon_0}\int_\infty^r \frac{Q}{r^2}\dif r\\
+V &= \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{r} \bigg|_\infty^r\right) = \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{r} - \frac{Q}{\infty}\right) = \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{r}-0\right)\\
 V &= \frac{1}{4\pi\epsilon_0}\frac{Q}{r}
 \end{align*}
-For the next phase, we need to evaluate the potential in the shell. Notice that we should always start with the same form:$$V = \int_\infty^r \vec{E} \cdot \dif \vec{s}$$However, our electric field is partitioned, so we have the derived expression:
+For the next phase, we need to evaluate the potential in the shell. Notice that we should always start with the same form:$$V = -\int_\infty^r \vec{E} \cdot \dif \vec{s}$$However, our electric field is partitioned, so we have the derived expression:
 \begin{align*}
-V &= -\int_\infty^r \vec{E} \dif \vec{s}\\
-V &= -\int_\infty^c \frac{Q}{4\pi\epsilon_0 r^2} \dif r + \int_c^r \frac{Q}{4\pi\epsilon_0\epsilon_r r^2} \dif r\\
+V &= -\int_\infty^r \vec{E} \cdot \dif \vec{s}\\
+V &= -\left(\int_\infty^c \frac{Q}{4\pi\epsilon_0 r^2} \dif r + \int_c^r \frac{Q}{4\pi\epsilon_0\epsilon_r r^2} \dif r\right)\\
 V &= -\frac{1}{4\pi\epsilon_0}\left(\int_\infty^c \frac{Q}{r^2}\dif r + \frac{1}{\epsilon_r} \int_c^r \frac{Q}{r^2} \dif r \right)
 \end{align*}
 In addition, we notice that we have already evaluated the expression for one of the expressions in step 1. So, our condensed form is:$$V = \frac{1}{4\pi\epsilon}\frac{Q}{c} + \left(-\frac{1}{4\pi\epsilon_0\epsilon_r} \int_c^r \frac{Q}{r^2} \dif r\right)$$
 Why does our form contain the previous voltage? This is simply a result of understanding conservative fields. We define our potential by $V = -\int \vec{E} \cdot \dif \vec{s}$. However, notice that since our field is conservative, the path we take does not matter. Because we are following the same path, however, we must go through the point $c$, which is contained in how we evaluated for the potential outside of the shell. As a result of the field being conservative and how we go through point $c$, our total energy is an arithmetic sum of the potential to point $c$ and the potential from $c$ to $r$. And again, we can go any path, so it's very possible that this integral could have been separated numerous times by different points. However, that would only be redundant. In addition, there would still be the difference in electric field between $b<r<c$ and $r > c$, so we would always have to go through the radius $c$ to get inside. And finally, our field is radial, so we have to pass through point $c$, since $c$ is a radius, not a physical point in space. For the purpose of the problem, we proceed to calculate:
 \begin{align*}
-V &= \frac{1}{4\pi\epsilon}\frac{Q}{c} + \left(-\frac{1}{4\pi\epsilon_0\epsilon_r} \int_c^r \frac{Q}{r^2} \dif r\right)
+V &= \frac{1}{4\pi\epsilon}\frac{Q}{c} - \frac{1}{4\pi\epsilon_0\epsilon_r} \int_c^r \frac{Q}{r^2} \dif r\\
+V &= \frac{1}{4\pi\epsilon}\frac{Q}{c} + \frac{1}{4\pi\epsilon_0\epsilon_r}\left(\frac{Q}{r}-\frac{Q}{c}\right)
 \end{align*} 
+Proceeding, we now include the partition of $a < r < b$, which is in a vacuum. So, using the previous form, our calculation follows:
+\begin{align*}
+V &= \frac{1}{4\pi\epsilon}\frac{Q}{c} + \frac{1}{4\pi\epsilon_0\epsilon_r}\left(\frac{Q}{b}-\frac{Q}{c}\right) - \frac{1}{4\pi\epsilon_0}\int_b^r \frac{Q}{r^2}\dif r\\
+V &= \frac{1}{4\pi\epsilon}\frac{Q}{c} + \frac{1}{4\pi\epsilon_0\epsilon_r}\left(\frac{Q}{b}-\frac{Q}{c}\right) + \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{r}-\frac{Q}{b}\right)
+\end{align*}
+Finally, we know that in a conducting sphere, we have no electric field inside, so the expression for potential inside the sphere should be constant anywhere inside:
+$$V = \frac{1}{4\pi\epsilon}\frac{Q}{c} + \frac{1}{4\pi\epsilon_0\epsilon_r}\left(\frac{Q}{b}-\frac{Q}{c}\right) + \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{a}-\frac{Q}{b}\right)$$
+A side note: One may think that the form $V = -\int \vec{E} \cdot \dif \vec{r}$ for this problem should yield $V = \int E \dif r$ because you are moving opposite the direction of the field. However, when doing line integrals, you either fix the path, or fix the limits. In this case, we are fixing the path. This is why we choose $\dif \vec{r}$. The direction of $\vec{r}$ is always pointing radially outwards from the source. Thus, our dot product should not change the sign. However, our limits go from the further radius to the smaller radius. \\
+\\
+Now, this next section will cover circuits. There are several key concepts to understand before delving into circuitry. One important concept is drift velocity. In any current carrying wire, there are electrons moving, but they are moving in different directions. However, because of the electric field, they must all have a horizontal component in the same direction. We can quantize this average velocity as the drift velocity. There is another constant called mobility, or the average drift velocity per electric field (strength). Meaning, for a given electric field through a portion of the wire, we can calculate the average drift velocity with this measured constant: $$\vec{\nu} = \vec{E}\mu$$Where $\nu$ is the drift velocity and $\mu$ is the mobility constant. From here, there is another important quantity to measure: Charge per second, or an current ($I$). This is an important quantity because it is very useful for measurement and many other calculations surrounding circuits. When we say charge per second, we mean that let me choose some point along the wire. I want to know, per second, how many charges pass through that point. An interesting way to calculate this given the drift velocity is the choose some point. Let me choose 1 charge at that point and have it move at the drift velocity for $1$ second. After $1$ second, it'll clearly end up at another point. Clearly, at the second point, it has not gone beyond that point. However, at the same time, it clearly passed all the points between the initial and final point. This is also the same thing as saying all the charge between those two points (initially) have definitely passed through the final point, since the other charges were ahead of this charge we chose. So, it's as if all the charges enclosed in this volume between the initial and final point have passed through the final point after $1$ second. So, if I can find how much charge was enclosed in that volume, then I know how much charge passes a point per second with the average drift velocity. So, the calculation should follow:
+\begin{align*}
+I &= \frac{Q}{t}\\
+&= \frac{\rho V}{t}\\
+&= \frac{\rho lA}{t}\\
+&= \frac{\rho \nu t A}{t}\\
+&= \frac{\rho |\vec{E}|\mu t A}{t}\\
+&= \rho |\vec{E}|\mu A
+\end{align*}
+Now that we understand how we can calculate current by an electric field, we have understood, at the microscopic level, how electric fields move charges, and how we call something "current". The next step is understanding, briefly, how batteries provide a constant voltage across an entire circuit. In voltaic cells, or batteries that we will focus on, they undergo a chemical process called oxidation and reduction reactions. Generally, by the chemical process, charge is produced and a voltage difference is generated. After all, a potential difference is energy, so to keep that constant while it is constantly being used, you need a constant chemical energy process. This is also why batteries eventually deteriorate. 
 \pagebreak
 
 \section{Week 3}
