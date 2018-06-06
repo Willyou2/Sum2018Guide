@@ -391,12 +391,14 @@ I will now begin to talk about energy and electric potential (voltage). There is
 Now, another important concept is the idea of reference points. When I say reference point, I say: what is my potential with respect to that point. This is also equivalent to treating that reference point as having 0 potential. You may question: But if I use the equation and do $\int_A^B \vec{E} \cdot \dif \vec{s}$, clearly I will end up with $V(B) - V(A)$, and $V(A)$ may not necessarily be 0. However, if I say my refernce point is $A$, the equation can be looked at in this form: $$(V(B)-V(A)) - 0$$If you notice, with this representation, it is saying, if I take my voltage at $A$ to be 0, what is my voltage at $B$? It must be the voltage with respect to, hence $V(B)- V(A)$. Another important point about reference points. Choose your reference points wisely. After all, for any problem, you should define your reference point and do all calculations with the same reference point. For many problems, you will likely use $r = \infty$ as a reference point. This is because it not only evaluates to the physical value $0$ but also because it is continuous through it (as opposed to evaluating the potential at $r = 0$).\\
 \\
 So, how can we approach an actual problem by understanding this? Let us supposed we have a configuration: 
+
 \pagebreak
 \begin{figure}[ht]
 \center
 \includegraphics[width=.3\textwidth]{images/Week2pic1.jpg}
 \caption{The image represents a conducting sphere in the center, surrounded by an insulating shell with a dielectric constant $\epsilon$. We'll call this $\epsilon_r$. The radius to useful points are given.}
 \end{figure}
+
 So, the problem is that I want to evaluate the electric potential at any point. What does this mean? It means that I have to evaluate the electric potential anywhere in space with respect to some reference point. It would be best to use $\infty$ as my reference point here, since the evaluation of an electric potential (as in take the indefinite integral of the electric field with respect to $r$. This is just saying what is the mathematical calculated value, since electric potential is supposed to be with respect to some point) at $\infty$ is conveniently 0. Thus, we must start from infinity and move closer. We can understand that every point in space is some radial distance from the center. In addition, due to symmetry, we can say that any point along the same radius should have the same electric potential. Thus, we can make our path from $\infty$ easier by moving along one of the radiuses. This is because it makes the dot product much more convenient, since the direction vector and electric field vector are parallel. Another important thing to realize is that our electric field at different radii is different. In the conducting sphere, we have $0$, but between $a$ and $b$, we have some electric field, and in the shell, we have another electric field (different due to it being a dielectric). I will speak briefly about the general concept of dielectrics:\\
 \\
 \subsection{Dielectrics}
@@ -406,7 +408,7 @@ A dielectric material is, in general, an insulating material. This can apply to 
 \includegraphics[width=.3\textwidth]{images/Week2pic2.jpg}
 \caption{The image displays the effect of an electric field on a dielectric. Notice how internals dipoles form. These produce a net electric field in the opposite direction.}
 \end{figure}
-
+\\
 Back to the problem at hand, if we wish to calculate the electric potential at any point in space, we need to separate our integral depending on what point we are going to. Thus, we have 4 cases:
 \begin{align*}
 r > c\\
@@ -447,9 +449,13 @@ $$V = \frac{1}{4\pi\epsilon}\frac{Q}{c} + \frac{1}{4\pi\epsilon_0\epsilon_r}\lef
 A side note: One may think that the form $V = -\int \vec{E} \cdot \dif \vec{r}$ for this problem should yield $V = \int E \dif r$ because you are moving opposite the direction of the field. However, when doing line integrals, you either fix the path, or fix the limits. In this case, we are fixing the path. This is why we choose $\dif \vec{r}$. The direction of $\vec{r}$ is always pointing radially outwards from the source. Thus, our dot product should not change the sign. However, our limits go from the further radius to the smaller radius. \\
 \\
 Now, this next section will cover circuits. Be aware, this section does not go too in depth on the equations such as the total capacitance or total resistance, but more covers loop rule and other important concepts in circuitry. There are several key concepts to understand before delving into circuitry. One important concept is drift velocity. In any current carrying wire, there are electrons moving, but they are moving in different directions. However, because of the electric field, they must all have a horizontal component in the same direction. We can quantize this average velocity as the drift velocity. There is another constant called mobility, or the average drift velocity per electric field (strength). Meaning, for a given electric field through a portion of the wire, we can calculate the average drift velocity with this measured constant: $$\vec{\nu} = \vec{E}\nu$$Where $\nu$ is the drift velocity and $\nu$ is the mobility constant. From here, there is another important quantity to measure: Charge per second, or an current ($I$). This is an important quantity because it is very useful for measurement and many other calculations surrounding circuits. When we say charge per second, we mean that let me choose some point along the wire. I want to know, per second, how many Coulombs pass through that point. An interesting way to calculate this given the drift velocity is the choose some point. Let me choose 1 charge at that point and have it move at the drift velocity for $1$ second. After $1$ second, it'll clearly end up at another point. Clearly, at the second point, it has not gone beyond that point. However, at the same time, it clearly passed all the points between the initial and final point. This is also the same thing as saying all the charge between those two points (initially) have definitely passed through the final point, since the other charges were ahead of this charge we chose. So, it's as if all the charges enclosed in this volume between the initial and final point have passed through the final point after $1$ second. So, if I can find how much charge was enclosed in that volume, then I know how much charge passes a point per second with the average drift velocity. 
-
-%INCLUDE IMAGE%
-
+\pagebreak
+\begin{figure}[ht]
+\center
+\includegraphics[width=.3\textwidth]{images/Week2pic3.jpg}
+\caption{The image shows what I mean by all the charge enclosed in the volume after 1 second should have also passed the point the charge you chose ended up at: point $f$}
+\end{figure}
+\\
 So, the calculation should follow:
 \begin{align*}
 I &= \frac{Q}{t}\\
@@ -465,7 +471,11 @@ Now that we understand how we can calculate current by an electric field, we hav
 \subsection{Energy Density}
 Another important concept when understanding the energy stored by electric fields is by understanding energy density. Simply put, we say energy density is the energy per unit volume. But, how can we understand what it means to have an energy density? Well, we can imagine this as having two infinitely large parallel charged plates. So, basically, I want to see how my energy changes as I increase the space between the two, or the volume, or energy per volume. Basically, I will move some arbitrary group of charge parallel to the other plate from the reference point to some other point and divide it by the volume enclosed. 
 
-%INCLUDE IMAGE%
+\begin{figure}[ht]
+\center
+\includegraphics[width=.3\textwidth]{images/Week2pic4.jpg}
+\caption{The image displays the intuition behind what I am trying to do to calculate energy density. Notice I move a plate to some distance and enclose some volume.}
+\end{figure}
 
 So, I need to start by representing the charge I will take: $$Q = \sigma A$$where $\sigma$ is the energy density of the large plates. Then, I want to calculate my energy change per volume: $$\Delta V = \frac{1}{V}\int_0^d \vec{F} \cdot \dif \vec{r} = \frac{1}{V}\int_0^d \sigma A \vec{E} \cdot\dif \vec{r} = \frac{1}{V}\int_0^d \sigma A \frac{\sigma}{\epsilon}\dif r = \frac{1}{V}\int_0^d \frac{\sigma^2A}{\epsilon}\dif r$$One question that may arise is that, if my volume changes as my distance changes, so the volume $V$ should not be able to be taken out: $\frac{1}{V}$. However, the argument for this is that I want to evaluate the energy density given a fixed point, not some arbitrary changing point. In addition, consider I did put $\frac{1}{V}$ in the intergal. This would be the same as saying, for every infinitesimal distance I cover, I want to multiply that by my force per that different volume. However, that means nothing, as this does not properly calculate energy, since it now depends on a variant volume enclosed. But, we know that for these plates, energy is linear. That is, since it has a constant electric field, it's simply $\frac{\sigma}{\epsilon}d$. Moving on, we want to now evaluate this integral and simplify: 
 \begin{align*}
@@ -499,12 +509,23 @@ Now we will discuss resistance and resistors. Resistance is essentially used to 
 \begin{align*}
 V &= IR\\
 R &= \frac{V}{I}\\
-&= \frac{V}{\rho |\vec{E}|\mu A}\\
-&= \frac{V}{\rho \frac{V}{L}\mu A}\\
-&= \frac{L}{\rho\mu A}
+&= \frac{V}{\rho |\vec{E}|\nu A}\\
+&= \frac{V}{\rho \frac{V}{L}\nu A}\\
+&= \frac{L}{\rho\nu A}\\
 \end{align*}
-
-
+Since $A$ and $L$ doesn't depend on the material, we can say resistivity $r$ is:
+\begin{align*}
+r = \frac{1}{\rho \nu} = R\frac{A}{L}
+\end{align*}
+Where $R$ is resistance. Before we briefly discuss resistors and finding an equivalent resistance, you should understand several concepts about circuits. In a conventional circuit, any charge that flows through must, by the loop rule, have a total change in voltage of $0$ when it returns to the point it started at. In addition, because of this, parallel circuits must have the same voltage drop over the parts that are parallel in order to maintain this rule. In addition, the current through each parallel portion must sum up to the current that leaves and enters the parallel portion. Below, I have illustrated the series of concepts and results of the loop rule:
+\pagebreak
+\begin{figure}[ht]
+\center
+\includegraphics[width=.3\textwidth]{images/Week2pic5.jpg}
+\caption{I have illustrated the loop rule above.}
+\end{figure}
+\\
+When following the illustration, do note that when I choose a point, for simplicity sake, I can assume I have no initial voltage (as if I haven't passed through the battery yet). So I can start at $0$, but when I pass through the battery I gain voltage, when I go through a resistor, I lose potential. It's also important to note the loop where I only go around the parallel portion without the battery. This is fine, because what is a circuit really? The battery produces an emf that generates an electric field over the entire circuit. Imagine it like a vector field. We know that for all (that we will discuss) Coulomb fields, the field should be conservative, so it shouldn't matter what path we take. So instead of going through a part that gives me more potential, I can simply go in the smaller loop (through the parallel portion). All I'm doing is following the field and trying to reach the point I started at. This is also why my total change in potential from my starting point $P$ and going back to where I started is $0$. Remember, in a circuit, it's still as if you have a vector field, but it only exists along the circuit. But, we are always following the wires, so it's as if we are just in a vector field (don't forget this particular vector field is conservative!).  
 %MIGHT ADD SECTION ON HOW BATTERIES ACTUALLY OUTPUT THE ELECTRIC FIELD INTO THE CIRCUIT BY FEEDBACK MECH%
 
 %DONT FORGET TO DESCRIBE ENERGY DENSITY AND STORING ENERGY AND CAPACITORS%

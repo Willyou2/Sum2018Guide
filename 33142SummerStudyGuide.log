@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  5 JUN 2018 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.17)  6 JUN 2018 13:41
 entering extended mode
 **"C:/Users/William Cen/Sum2018Guide/33142SummerStudyGuide.tex"
 ("C:/Users/William Cen/Sum2018Guide/33142SummerStudyGuide.tex"
@@ -1293,78 +1293,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
  []
 
-<images/Week2pic1.jpg, id=75, 2457.18pt x 1610.015pt>
-File: images/Week2pic1.jpg Graphic file (type jpg)
-<use images/Week2pic1.jpg>
-Package pdftex.def Info: images/Week2pic1.jpg  used on input line 397.
-(pdftex.def)             Requested size: 140.92792pt x 92.3221pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--402
+Underfull \hbox (badness 10000) in paragraph at lines 391--394
 
  []
 
 [16]
+<images/Week2pic1.jpg, id=78, 2457.18pt x 1610.015pt>
+File: images/Week2pic1.jpg Graphic file (type jpg)
+<use images/Week2pic1.jpg>
+Package pdftex.def Info: images/Week2pic1.jpg  used on input line 398.
+(pdftex.def)             Requested size: 140.92792pt x 92.3221pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+
+ []
+
 <images/Week2pic2.jpg, id=79, 2457.18pt x 1927.2pt>
 File: images/Week2pic2.jpg Graphic file (type jpg)
 <use images/Week2pic2.jpg>
-Package pdftex.def Info: images/Week2pic2.jpg  used on input line 406.
+Package pdftex.def Info: images/Week2pic2.jpg  used on input line 408.
 (pdftex.def)             Requested size: 140.92792pt x 110.51025pt.
- [17 <./images/Week2pic1.jpg> <./images/Week2pic2.jpg>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 446--449
+[17 <./images/Week2pic1.jpg> <./images/Week2pic2.jpg>] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 463--465
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--465
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 480--485
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 494--499
-
- []
-
-[22] [23] [24] [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+<images/Week2pic3.jpg, id=86, 2513.39pt x 2441.12pt>
+File: images/Week2pic3.jpg Graphic file (type jpg)
+<use images/Week2pic3.jpg>
+Package pdftex.def Info: images/Week2pic3.jpg  used on input line 455.
+(pdftex.def)             Requested size: 140.92792pt x 136.85078pt.
+[19] [20 <./images/Week2pic3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 469--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+Underfull \hbox (badness 10000) in paragraph at lines 469--471
+
+ []
+
+<images/Week2pic4.jpg, id=94, 2457.18pt x 3276.24pt>
+File: images/Week2pic4.jpg Graphic file (type jpg)
+<use images/Week2pic4.jpg>
+Package pdftex.def Info: images/Week2pic4.jpg  used on input line 476.
+(pdftex.def)             Requested size: 140.92792pt x 187.86743pt.
+[21 <./images/Week2pic4.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 490--495
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 504--509
+
+ []
+
+<images/Week2pic5.jpg, id=101, 2457.18pt x 3055.415pt>
+File: images/Week2pic5.jpg Graphic file (type jpg)
+<use images/Week2pic5.jpg>
+Package pdftex.def Info: images/Week2pic5.jpg  used on input line 524.
+(pdftex.def)             Requested size: 140.92792pt x 175.20479pt.
+[23] [24 <./images/Week2pic5.jpg>] [25] [26] [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 
  []
 
-[27] [28] (33142SummerStudyGuide.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
+
+ []
+
+[29] [30] (33142SummerStudyGuide.aux) ) 
 Here is how much of TeX's memory you used:
- 25179 strings out of 493303
- 536637 string characters out of 3127172
- 542040 words of memory out of 3000000
- 28368 multiletter control sequences out of 15000+200000
+ 25194 strings out of 493303
+ 536973 string characters out of 3127172
+ 541040 words of memory out of 3000000
+ 28380 multiletter control sequences out of 15000+200000
  543598 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,66p,10425b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1387,9 +1402,9 @@ fonts/cm/cmsy7.pfb><C:/Users/William Cen/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/William Cen/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/William Cen/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb>
-Output written on 33142SummerStudyGuide.pdf (28 pages, 1554298 bytes).
+Output written on 33142SummerStudyGuide.pdf (30 pages, 2131766 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
