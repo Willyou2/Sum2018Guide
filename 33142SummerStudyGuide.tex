@@ -527,8 +527,46 @@ Where $R$ is resistance. Before we briefly discuss resistors and finding an equi
 \\
 When following the illustration, do note that when I choose a point, for simplicity sake, I can assume I have no initial voltage (as if I haven't passed through the battery yet). So I can start at $0$, but when I pass through the battery I gain voltage, when I go through a resistor, I lose potential. It's also important to note the loop where I only go around the parallel portion without the battery. This is fine, because what is a circuit really? The battery produces an emf that generates an electric field over the entire circuit. Imagine it like a vector field. We know that for all (that we will discuss) Coulomb fields, the field should be conservative, so it shouldn't matter what path we take. So instead of going through a part that gives me more potential, I can simply go in the smaller loop (through the parallel portion). All I'm doing is following the field and trying to reach the point I started at. This is also why my total change in potential from my starting point $P$ and going back to where I started is $0$. Remember, in a circuit, it's still as if you have a vector field, but it only exists along the circuit. But, we are always following the wires, so it's as if we are just in a vector field (don't forget this particular vector field is conservative!).  
 %MIGHT ADD SECTION ON HOW BATTERIES ACTUALLY OUTPUT THE ELECTRIC FIELD INTO THE CIRCUIT BY FEEDBACK MECH%
+It's very important to discuss capacitors with respect to the loop rule. Consider a capacitor, resistor, and battery in series. Let use write a loop rule to represent this. Choose some arbitrary point $P$, and the equation will still yield: 
+\begin{align*}
++\varepsilon - IR - \frac{q}{C} = 0
+\end{align*}
+Before we go on, it is important to understand what we are trying to solve here. We want to solve for the charge on the capacitor as a function of time. We also know that $I$ is not constant since the capacitor causes the current to depend on time. Current is essentially $\frac{\dif q_i}{\dif t}$. However, this $q_i$ is the charge moving through the circuit. But, we know that $\frac{\dif q}{\dif t}$, where $q$ is the charge on the capacitor, is positive when the current is positive since the current charges the capacitor, then the equation is:
+\begin{align*}
+\varepsilon &= \frac{\dif q}{\dif t}R + \frac{q}{C}\\
+C\varepsilon &= \frac{\dif q}{\dif t}RC + q\\
+C\varepsilon - q &= \frac{\dif q}{\dif t}RC\\
+\frac{\dif t}{RC} &= \frac{\dif q}{C\varepsilon-q} \\
+\frac{1}{RC}\int_0^t \dif t &= \int_0^q \frac{\dif q}{C\varepsilon-q}\\
+\frac{t}{RC} &= -\ln(C\varepsilon - q)\big|_0^q\\
+-\frac{t}{RC} &= \ln(C\varepsilon - q) - \ln(C\varepsilon) \\
+-\frac{t}{RC} &= \ln(\frac{C\varepsilon - q}{C\varepsilon}) \\
+e^{-\frac{t}{RC}} &= \frac{C\varepsilon - q}{C\varepsilon}\\
+C\varepsilon e^{-\frac{t}{RC}} &=C\varepsilon - q\\
+q &= C\varepsilon - C\varepsilon e^{-\frac{t}{RC}}\\
+q(t) &= C\varepsilon(1 - e^{-\frac{t}{RC}}) 
+\end{align*}
+Looking at the equation, we observe several important things. Firstly, as time approaches $\infty$, our charge on the capacitor is as we expected, $q \rightarrow C\varepsilon$, which also means that the voltage complete opposes the battery's voltage: $\frac{q}{C} \rightarrow \varepsilon$. At this point, we should also expect our current to be $0$, since we have two opposing voltages, which apply opposite electric fields. Another way of reasoning this is by the loop equation $\varepsilon - IR - \frac{q}{C} = 0$. If we had current but $\frac{q}{C}$ was $\varepsilon$, our loop would have a negative total voltage, which is not the case. Thus, $I \rightarrow 0$. You can also reason that because the current is also the rate of change of charge on the capacitor, taking the derivative of our derived equation and setting $t = \infty$ will yield $0$. After all, our capacitor is no longer charging as $t \rightarrow \infty$ as our capacitor's charge is constant as $t \rightarrow \infty$.\\
+\\
+Another important problem to solve is the discharge of a capacitor. That is, we have a capacitor, fully charged, as the power source. Let us solve the equation for a simple series circuit with just the capacitor and resistor. Choose a point $P$, and the general equation should follow:
+\begin{align*}
+\frac{q}{C} - IR = 0
+\end{align*}
+Now, we should once again think about what is $I$ in terms of the charge on the capacitor. We know that the capacitor's discharging gives us a positive current. However, a discharging capacitor has a negative $\frac{\dif q}{\dif t}$, since that is essentially the rate of change of charge on the capacitor, which lowers over time. Thus, the equation goes to:
+\begin{align*}
+\frac{q}{C} - (-\frac{\dif q}{\dif t}R) &= 0\\
+\frac{q}{C} &= -\frac{\dif q}{\dif t}R \\
+q &= -\frac{\dif q}{\dif t}RC \\
+-\frac{\dif t}{RC} &= \frac{\dif q}{q} \\
+-\frac{1}{RC}\int_0^t \dif t &= \int_{q_{max}}^q \frac{\dif q}{q} \\
+-\frac{t}{RC} &= \ln(q) - \ln(q_{max})\\
+-\frac{t}{RC} &= \ln(\frac{q}{q_{max}})\\
+e^{-\frac{t}{RC}} &= \frac{q}{q_{max}}\\
+q(t) &= q_{max}e^{-\frac{t}{RC}}\\
+\end{align*} 
+Similarly, we can see that as $t \rightarrow \infty$, the $e^{-\frac{t}{RC}} \rightarrow 0$. Howevever, rather than reaching a larger charge, we are discharging, as the equation converges to $0$ as $t\rightarrow \infty$. 
+%ADD SECTION ON PUTTING DIELECTRIC IN BETWEEN CAPACITORS%
 
-%DONT FORGET TO DESCRIBE ENERGY DENSITY AND STORING ENERGY AND CAPACITORS%
 \pagebreak
 
 \section{Week 3}
