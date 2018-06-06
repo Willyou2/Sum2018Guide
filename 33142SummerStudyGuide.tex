@@ -446,16 +446,68 @@ Finally, we know that in a conducting sphere, we have no electric field inside, 
 $$V = \frac{1}{4\pi\epsilon}\frac{Q}{c} + \frac{1}{4\pi\epsilon_0\epsilon_r}\left(\frac{Q}{b}-\frac{Q}{c}\right) + \frac{1}{4\pi\epsilon_0}\left(\frac{Q}{a}-\frac{Q}{b}\right)$$
 A side note: One may think that the form $V = -\int \vec{E} \cdot \dif \vec{r}$ for this problem should yield $V = \int E \dif r$ because you are moving opposite the direction of the field. However, when doing line integrals, you either fix the path, or fix the limits. In this case, we are fixing the path. This is why we choose $\dif \vec{r}$. The direction of $\vec{r}$ is always pointing radially outwards from the source. Thus, our dot product should not change the sign. However, our limits go from the further radius to the smaller radius. \\
 \\
-Now, this next section will cover circuits. There are several key concepts to understand before delving into circuitry. One important concept is drift velocity. In any current carrying wire, there are electrons moving, but they are moving in different directions. However, because of the electric field, they must all have a horizontal component in the same direction. We can quantize this average velocity as the drift velocity. There is another constant called mobility, or the average drift velocity per electric field (strength). Meaning, for a given electric field through a portion of the wire, we can calculate the average drift velocity with this measured constant: $$\vec{\nu} = \vec{E}\mu$$Where $\nu$ is the drift velocity and $\mu$ is the mobility constant. From here, there is another important quantity to measure: Charge per second, or an current ($I$). This is an important quantity because it is very useful for measurement and many other calculations surrounding circuits. When we say charge per second, we mean that let me choose some point along the wire. I want to know, per second, how many charges pass through that point. An interesting way to calculate this given the drift velocity is the choose some point. Let me choose 1 charge at that point and have it move at the drift velocity for $1$ second. After $1$ second, it'll clearly end up at another point. Clearly, at the second point, it has not gone beyond that point. However, at the same time, it clearly passed all the points between the initial and final point. This is also the same thing as saying all the charge between those two points (initially) have definitely passed through the final point, since the other charges were ahead of this charge we chose. So, it's as if all the charges enclosed in this volume between the initial and final point have passed through the final point after $1$ second. So, if I can find how much charge was enclosed in that volume, then I know how much charge passes a point per second with the average drift velocity. So, the calculation should follow:
+Now, this next section will cover circuits. Be aware, this section does not go too in depth on the equations such as the total capacitance or total resistance, but more covers loop rule and other important concepts in circuitry. There are several key concepts to understand before delving into circuitry. One important concept is drift velocity. In any current carrying wire, there are electrons moving, but they are moving in different directions. However, because of the electric field, they must all have a horizontal component in the same direction. We can quantize this average velocity as the drift velocity. There is another constant called mobility, or the average drift velocity per electric field (strength). Meaning, for a given electric field through a portion of the wire, we can calculate the average drift velocity with this measured constant: $$\vec{\nu} = \vec{E}\nu$$Where $\nu$ is the drift velocity and $\nu$ is the mobility constant. From here, there is another important quantity to measure: Charge per second, or an current ($I$). This is an important quantity because it is very useful for measurement and many other calculations surrounding circuits. When we say charge per second, we mean that let me choose some point along the wire. I want to know, per second, how many Coulombs pass through that point. An interesting way to calculate this given the drift velocity is the choose some point. Let me choose 1 charge at that point and have it move at the drift velocity for $1$ second. After $1$ second, it'll clearly end up at another point. Clearly, at the second point, it has not gone beyond that point. However, at the same time, it clearly passed all the points between the initial and final point. This is also the same thing as saying all the charge between those two points (initially) have definitely passed through the final point, since the other charges were ahead of this charge we chose. So, it's as if all the charges enclosed in this volume between the initial and final point have passed through the final point after $1$ second. So, if I can find how much charge was enclosed in that volume, then I know how much charge passes a point per second with the average drift velocity. 
+
+%INCLUDE IMAGE%
+
+So, the calculation should follow:
 \begin{align*}
 I &= \frac{Q}{t}\\
 &= \frac{\rho V}{t}\\
 &= \frac{\rho lA}{t}\\
 &= \frac{\rho \nu t A}{t}\\
-&= \frac{\rho |\vec{E}|\mu t A}{t}\\
-&= \rho |\vec{E}|\mu A
+&= \frac{\rho |\vec{E}|\nu t A}{t}\\
+&= \rho |\vec{E}|\nu A
 \end{align*}
-Now that we understand how we can calculate current by an electric field, we have understood, at the microscopic level, how electric fields move charges, and how we call something "current". The next step is understanding, briefly, how batteries provide a constant voltage across an entire circuit. In voltaic cells, or batteries that we will focus on, they undergo a chemical process called oxidation and reduction reactions. Generally, by the chemical process, charge is produced and a voltage difference is generated. After all, a potential difference is energy, so to keep that constant while it is constantly being used, you need a constant chemical energy process. This is also why batteries eventually deteriorate. 
+Usually, you will know the number of charge carriers per volume rather than Coulombs, so instead of $\rho$, you will have $n$, so the expression must be multiplied by the charge in Coulombs per charge carrier (usually same magnitude as electron): $$I = n|\vec{E}|\nu Ae$$If you know the drift velocity, then: $I = nA\nu e$. 
+Now that we understand how we can calculate current by an electric field, we have understood, at the microscopic level, how electric fields move charges, and how we call something "current". The next step is understanding, briefly, how batteries provide a constant voltage across an entire circuit. In voltaic cells, or batteries that we will focus on, they undergo a chemical process called oxidation and reduction reactions. Generally, by the chemical process, charge is produced and a voltage difference is generated. After all, a potential difference is energy, so to keep that constant while it is constantly being used, you need a constant chemical energy process. This is also why batteries eventually deteriorate. Batteries are unique in that they store the electrical energy via chemical energy. There is another way of storing energy. However, unlike batteries, it is not chemical and it does not constantly output the same voltage. These are called capacitors. Capacitors are unique for a couple of reasons. If a charged capacitor is placed in a circuit, it'll act like a battery, except the charge on the plates will disperse (there is no constant supply of charge), so you can expect the current to drop over time. Now, I will discuss a common form of a capacitor: two parallel plates. These parallel plates are responsible for accumulating the charge in the circuit. Now, from the previous understanding of electric fields, there is an electric field due to these plates. In addition, these plates then to be large compared to the small distance between, leading it to be similar to the parallel infinite plate setup, with an electric field of:$$\vec{E} = \frac{\sigma}{\epsilon}$$Now there is another important thing to realize. That is, with an electric field beteen these plates, there is clearly a potential difference as well. That would be: $$\Delta V = \int_0^d \frac{\sigma}{\epsilon} \dif r$$The reason why we don't care about the sign in front of the integral is because we're just showing the difference in potential. If you would like to be more formal with directions, it would be negative in the form we constructed because I am moving from $0$ (what I choose to be my reference point) to $d$. The electric field, being positive, means that I am moving along it. So, my potential surely would decrease and be kinetic energy instead. But, as I said, what is of importance is understanding what it means to have a potential difference across these plates. \\
+\\
+\subsection{Energy Density}
+Another important concept when understanding the energy stored by electric fields is by understanding energy density. Simply put, we say energy density is the energy per unit volume. But, how can we understand what it means to have an energy density? Well, we can imagine this as having two infinitely large parallel charged plates. So, basically, I want to see how my energy changes as I increase the space between the two, or the volume, or energy per volume. Basically, I will move some arbitrary group of charge parallel to the other plate from the reference point to some other point and divide it by the volume enclosed. 
+
+%INCLUDE IMAGE%
+
+So, I need to start by representing the charge I will take: $$Q = \sigma A$$where $\sigma$ is the energy density of the large plates. Then, I want to calculate my energy change per volume: $$\Delta V = \frac{1}{V}\int_0^d \vec{F} \cdot \dif \vec{r} = \frac{1}{V}\int_0^d \sigma A \vec{E} \cdot\dif \vec{r} = \frac{1}{V}\int_0^d \sigma A \frac{\sigma}{\epsilon}\dif r = \frac{1}{V}\int_0^d \frac{\sigma^2A}{\epsilon}\dif r$$One question that may arise is that, if my volume changes as my distance changes, so the volume $V$ should not be able to be taken out: $\frac{1}{V}$. However, the argument for this is that I want to evaluate the energy density given a fixed point, not some arbitrary changing point. In addition, consider I did put $\frac{1}{V}$ in the intergal. This would be the same as saying, for every infinitesimal distance I cover, I want to multiply that by my force per that different volume. However, that means nothing, as this does not properly calculate energy, since it now depends on a variant volume enclosed. But, we know that for these plates, energy is linear. That is, since it has a constant electric field, it's simply $\frac{\sigma}{\epsilon}d$. Moving on, we want to now evaluate this integral and simplify: 
+\begin{align*}
+V(d)-V(0) &= \frac{1}{V}\frac{\sigma^2Ad}{\epsilon} - 0\\
+&= \frac{1}{V}\frac{Q^2Ad}{A^2\epsilon}\\
+&= \frac{1}{V}\frac{Q^2V}{A^2\epsilon}\\
+&= \frac{Q^2}{A^2\epsilon}\\
+&= \epsilon\frac{Q^2}{A^2\epsilon^2}\\
+&= \epsilon(\frac{Q}{A\epsilon})^2\\
+&= \epsilon|\vec{E}|^2
+\end{align*}
+There is one final factor to point out: This is essentially moving one plate involving the influence of both. If we want the energy density for any particular electric field (or one of them), we have to halve the final answer. Thus, the final expression for energy density is:$$\frac{1}{2}\epsilon|\vec{E}|^2$$
+\noindent\rule{\textwidth}{1pt}
+\\
+\\
+Now, with all the necessary components, we can delve more into capacitors. We define capacitance on the equation: $q = CV$. Because capacitance is $\frac{q}{V}$ and voltage of a capacitor is defined across the distance between the plates (call it $d$), capacitance is roughly $\frac{A\epsilon}{d}$. So, capacitance is a rough way of measuring how much charge can I store on a plate. In addition, because we can represent the potential across the capacitors by this equation, if you calculate the energy for every little charge (after all, there are two plates) on a plate (with the electric field, pick one plate to measure the energy stored. As if you move one from the first plate to its new position but then multiply by charge to get the energy).
+\begin{align*}
+\Delta E &= \int V \dif q\\
+&= \int \frac{q}{C} \dif q\\
+&= \frac{1}{2}\frac{q^2}{C}
+\end{align*}
+Finally, if you would like to derive capacitors in series or in parallel, think about what is going on. In series, you want to substitute a single capacitor for 2 capacitors. Thus, the voltage across the sum of both capacitors must be the voltage of your final capacitor: $\frac{q_1}{C_1} + \frac{q_2}{C_2} = \frac{q_{\text{eq}}}{C_\text{eq}}$. However, there is an important idea to note about series capacitors. In series, even if the voltage across capacitors may differ, since they are in series, they are supplied with the same current flow. Meaning, after $t$ amount of time, the same charge has reached both capacitors(i.e. been charged the same amount). Thus:
+\begin{align*}
+\frac{q}{C_1} + \frac{q}{C_2} &= \frac{q}{C_\text{eq}}\\
+\frac{1}{C_1} + \frac{1}{C_2} &= \frac{1}{C_\text{eq}}
+\end{align*}
+The charging and discharging of capacitors will be covered in the loop section. 
+\\ 
+\\
+Now we will discuss resistance and resistors. Resistance is essentially used to decrease the voltage in a circuit. In fact, a result of Ohms law is $V = IR$, where $R$ is resistance, measured in $\Omega$ (Ohms). However, how do we measure resistance? There is constant that is a given material property called resistivity. This can be measured. Let us derive that:
+\begin{align*}
+V &= IR\\
+R &= \frac{V}{I}\\
+&= \frac{V}{\rho |\vec{E}|\mu A}\\
+&= \frac{V}{\rho \frac{V}{L}\mu A}\\
+&= \frac{L}{\rho\mu A}
+\end{align*}
+
+
+%MIGHT ADD SECTION ON HOW BATTERIES ACTUALLY OUTPUT THE ELECTRIC FIELD INTO THE CIRCUIT BY FEEDBACK MECH%
+
+%DONT FORGET TO DESCRIBE ENERGY DENSITY AND STORING ENERGY AND CAPACITORS%
 \pagebreak
 
 \section{Week 3}
