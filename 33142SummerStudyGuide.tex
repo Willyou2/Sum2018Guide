@@ -555,7 +555,7 @@ Another important problem to solve is the discharge of a capacitor. That is, we 
 Now, we should once again think about what is $I$ in terms of the charge on the capacitor. We know that the capacitor's discharging gives us a positive current. However, a discharging capacitor has a negative $\frac{\dif q}{\dif t}$, since that is essentially the rate of change of charge on the capacitor, which lowers over time. Thus, the equation goes to:
 \begin{align*}
 \frac{q}{C} - (-\frac{\dif q}{\dif t}R) &= 0\\
-\frac{q}{C} &= -\frac{\dif q}{\dif t}R \\
+\frac {q}{C} &= -\frac{\dif q}{\dif t}R \\
 q &= -\frac{\dif q}{\dif t}RC \\
 -\frac{\dif t}{RC} &= \frac{\dif q}{q} \\
 -\frac{1}{RC}\int_0^t \dif t &= \int_{q_{max}}^q \frac{\dif q}{q} \\
@@ -564,7 +564,13 @@ q &= -\frac{\dif q}{\dif t}RC \\
 e^{-\frac{t}{RC}} &= \frac{q}{q_{max}}\\
 q(t) &= q_{max}e^{-\frac{t}{RC}}\\
 \end{align*} 
-Similarly, we can see that as $t \rightarrow \infty$, the $e^{-\frac{t}{RC}} \rightarrow 0$. Howevever, rather than reaching a larger charge, we are discharging, as the equation converges to $0$ as $t\rightarrow \infty$. 
+Similarly, we can see that as $t \rightarrow \infty$, the $e^{-\frac{t}{RC}} \rightarrow 0$. Howevever, rather than reaching a larger charge, we are discharging, as the equation converges to $0$ as $t\rightarrow \infty$. Now that we have covered capacitors, we should talk about energy and electric fields in circuits. Recall that in a conservative electric field:
+$$-\oint \vec{E} \cdot \dif \vec{s} = 0$$
+Let us apply this idea to the circuit. We can take out the portion due to the battery to get a general form for any circuit:
+$$\varepsilon - \int_a^b \vec{E} \cdot \dif \vec{s} = 0$$
+Where $a$ is the positive end of the battery and $b$ is the negative end. By this concept, let us consider a case where the entire circuit is just a constant wire of the same resistance everywhere. Then, clearly, $V = IR$. However, a more conceptual way of looking at this problem, which allows us to deal with the problem to more detail is to consider the electric field throughout the entire circuit. Because we must lose all our potential in order for our equation: $\varepsilon - b \int_a^b \vec{E} \cdot \dif \vec{s} = 0$ to hold true, we know that $\varepsilon = \int_a^b \vec{E} \cdot \dif \vec{s}$. This essentially says that the electrical energy expensed (notice how it's not a negative integral) should be the same magnitude as the potential energy. This is also the same as saying $\varepsilon + \Delta V = 0$, or change in potential over the circuit should be the same as the battery's potential gained. So, considering this form, let us go back to that wire and battery scenario. Because the wire is constant everywhere, we can argue that our potential should be distributed uniformly across the entire wire. $V_\text{per length} = \frac{\varepsilon}{L}$, where L is the length of the wire. However, we also know that $E = \frac{\dif V}{\dif l}$. Because we should have the same distribution of $V$ everywhere due to the wire's consistent resistance, the electric field is also:
+$$E = \frac{\varepsilon}{L}$$
+Thus, with any portion of the circuit with constant resistance, we can say that my electric field is just the voltage across that portion over the length of the wire. 
 %ADD SECTION ON PUTTING DIELECTRIC IN BETWEEN CAPACITORS%
 
 \pagebreak
