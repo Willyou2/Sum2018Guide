@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.14)  15 JUN 2018 00:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.14)  15 JUN 2018 00:57
 entering extended mode
 **"C:/Users/William Cen/Sum2018Guide/33142SummerStudyGuide.tex"
 ("C:/Users/William Cen/Sum2018Guide/33142SummerStudyGuide.tex"
@@ -1351,27 +1351,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 676--680
 
  []
 
-[31] [32] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+<images/Week3pic4.jpg, id=131, 2099.845pt x 2015.53pt>
+File: images/Week3pic4.jpg Graphic file (type jpg)
+<use images/Week3pic4.jpg>
+Package pdftex.def Info: images/Week3pic4.jpg  used on input line 693.
+(pdftex.def)             Requested size: 140.92792pt x 135.25816pt.
+[31] [32 <./images/Week3pic4.jpg>] [33] [34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--744
+Underfull \hbox (badness 10000) in paragraph at lines 748--750
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--744
+Underfull \hbox (badness 10000) in paragraph at lines 748--750
 
  []
 
 [36] [37] (33142SummerStudyGuide.aux) ) 
 Here is how much of TeX's memory you used:
- 25940 strings out of 493305
- 536493 string characters out of 3127190
- 546038 words of memory out of 3000000
- 29123 multiletter control sequences out of 15000+200000
+ 25945 strings out of 493305
+ 536605 string characters out of 3127190
+ 546039 words of memory out of 3000000
+ 29127 multiletter control sequences out of 15000+200000
  545664 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,66p,2564b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1396,9 +1401,9 @@ ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/William Cen/AppData/Local/Programs
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
 rs/William Cen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmti12.pfb>
-Output written on 33142SummerStudyGuide.pdf (37 pages, 2440063 bytes).
+Output written on 33142SummerStudyGuide.pdf (37 pages, 2672548 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
