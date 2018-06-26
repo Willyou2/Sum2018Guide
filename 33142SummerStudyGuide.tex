@@ -734,7 +734,34 @@ V = -\frac{\dif BA}{\dif t}
 
 However, it is very important to develop an intuitive understanding for why this is the case. While I do not have a strong enough explanation for how a time dependent magnetic field induces a voltage because it changes the magnetic flux, I can offer a strong argument to solidify the understanding for how, if the magnetic flux changes through changing its area, there is a voltage induced. Consider the scenario below:
 
-%INSERT IMAGE%
+\begin{figure}[ht]
+\center
+\includegraphics[width=.3\textwidth]{images/Week3pic5.jpg}
+\caption{The image displays the magnetic field applied to a square loop of current in two different situations.}
+\end{figure}
+
+The concept I will discuss is the concept of motional emf. Basically, in the constant magnetic field, the bar move with some velocity. We can say the bar's mobile charges are electrons, for the purpose of simplicity. Looking at the bar moving, it's as if there are a bunch of electrons moving in the magnetic field. This is very similar to the idea we proposed when thinking about the Hall effect. Consider that the charges move to either end. The induced electric field creates a voltage across the bar. We also know that the electric field should yield a force against the magnetic force everywhere in the bar that yields a net force of $0$, so the electric field is constant throughout the bar. Thus, our derivation of the voltage should be thought of the energy done by the moving bar in the magnetic field:
+\begin{align*}
+E &= \int \vec{F} \cdot \dif \vec{r}\\
+&= q\vec{v}\times\vec{B}\\
+&= qvBh\\
+V &= \frac{qvBh}{q}\\
+&= Bvh
+\end{align*}
+As derived, we have, effectively, a physical description of Faraday's law of induction. Faraday's law says that the rate of change of magnetic flux yields a voltage. In the equation above, we have the rate of change of the area:
+\begin{align*}
+A &= lh\\
+\frac{\dif A}{\dif t} &= \frac{\dif l}{\dif t} h + l \frac{\dif h}{\dif t}\\
+&= vh + 0\\
+&= vh 
+\end{align*}
+Since our magnetic field is constant, the rate of change of magnetic flux with motional emf is due to the bar moving.\\
+\\
+Now, I introduce another important relation. Another important law incorporated in Maxwell's equations, like Gauss' Law, is Ampere's Law. Ampere's law relates the closed loop integral of the magnetic field to the current enclosed. What the closed loop integral of the magnetic field means is similar to how we define energy. We define Ampere's law formally by:
+\begin{align*}
+\oint \vec{B} \cdot \dif \vec{s} = \mu_0 \iint \vec{j} \cdot \dif \vec{A} = \mu_0 \sum\limits I_{\text{enclosed}}
+\end{align*} 
+Where $\vec{j}$ is the current density. So, how do we make sense of this equation? As I discussed above, this relates our magnetic loop integral to the current enclosed. Thus, to find the loop integral of the magnetic field, we have some loop we define, and integrate the magnetic field along the entire loop, given by $\oint \vec{B} \cdot \dif \vec{s}$, which calculates the magnetic field dotted along the portion of the loop in infinitesimal pieces, around the \textbf{whole} loop. The right hand side describes our current enclosed. The current that passes parallel to the area vector of our loop is the effective current enclosed in the loop. The current density integrated through the area enclosed by the loop is simply the current enclosed, given by $\iint \vec{j} \cdot \dif \vec{A}$. As shown, this can be simplified to $\sum\limits I_{\text{enclosed}}$. 
 
 \pagebreak
 
@@ -771,7 +798,9 @@ With that being said, let us discuss Gauss' Law. The expression is very complex,
 \begin{flalign*}
 &\oiint_{\partial \Omega} \VF{B} \cdot \VF{n} \dif S = 0&
 \end{flalign*}
-Looking at the left side, this is simply the same expression for Gauss' Law for electric fields except replaced with magnetic flux. However, notice how the right hand side is 0. When we think about magnetic fields, we will always have loops. After all, unlike electric fields, magnetic fields always have a north and south pole, so the magnetic field cannot go off indefinitely without ever returning. As a result, when we talk about the closed surface integral, or the flux through the entire surface, we include both the magnetic field going out and the magnetic field coming back. These always cancel out (unless there are magnetic monopoles\footnote{Magnetic Monopoles are an active field of research. In fact, this version of Gauss' Law indicates that if there were monopoles, we would have a non-zero magnetic flux. There is no evidence to suggest that magnetic monopoles cannot exist.}), which leads to the 0.
+Looking at the left side, this is simply the same expression for Gauss' Law for electric fields except replaced with magnetic flux. However, notice how the right hand side is 0. When we think about magnetic fields, we will always have loops. After all, unlike electric fields, magnetic fields always have a north and south pole, so the magnetic field cannot go off indefinitely without ever returning. As a result, when we talk about the closed surface integral, or the flux through the entire surface, we include both the magnetic field going out and the magnetic field coming back. These always cancel out (unless there are magnetic monopoles\footnote{Magnetic Monopoles are an active field of research. In fact, this version of Gauss' Law indicates that if there were monopoles, we would have a non-zero magnetic flux. There is no evidence to suggest that magnetic monopoles cannot exist.}), which leads to the 0.\\
+\\
+\subsection{Faraday's Law of Induction}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%% MIGHT BE USEFUL TO INCLUDE A SECTION CONCEPTUALIZING FLUX BECAUSE IT IS AN ABSTRACT CONCEPT TO THOSE WHO HAVEN'T LEARNED IT. ALSO DISCUSS GRADIENT CONCEPTUALLY. %%%%%%%%%%%
