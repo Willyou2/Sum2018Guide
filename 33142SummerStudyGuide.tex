@@ -783,7 +783,7 @@ This section goes in depth in explaining the implications and intuitions for und
     \oint_{\partial \Sigma} \VF{E} \cdot \dif \VF{s}
     &= -\frac{\dif}{\dif t}\iint_\Sigma \VF{B} \cdot \dif S\\
     \oint_{\partial \Sigma} \VF{B} \cdot \dif \VF{s}
-    &= \iint_\Sigma \VF{J} \cdot \dif \VF{S} + \frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}
+    &= \mu_0\left(\iint_\Sigma \VF{J} \cdot \dif \VF{S} + \epsilon_0\frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}\right)
 \end{align*}\\
 \subsection{Gauss' Law for Electric Fields}
 
@@ -809,11 +809,62 @@ What's so beautiful about this equation? It represents a connection between the 
 \pagebreak
 \subsection{Ampere's Law}
 \begin{flalign*}
-&\oint_{\partial \Sigma} \VF{B} \cdot \dif \VF{s} = \iint_\Sigma \VF{J} \cdot \dif \VF{S} + \frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}&
+&\oint_{\partial \Sigma} \VF{B} \cdot \dif \VF{s} = \mu_0\left(\iint_\Sigma \VF{J} \cdot \dif \VF{S} + \epsilon_0\frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}\right)&
 \end{flalign*}
 Here, we introduce a conceptual understanding of Ampere's Law. First, let us discuss the partial form of Ampere's Law: $\oint_{\partial \Sigma} \VF{B} \cdot \dif \VF{s} = \iint_\Sigma \VF{J} \cdot \dif \VF{S}$. Before displacement current was discovered, this was the original equation. The left hand side is similar to our expression for Faraday's law, where we have the loop integral over the magnetic field instead of the electric field. Essentially, we are dotting each infinitesimal small piece of the loop with our magnetic field and adding it all up over the whole loop. It is important to understand that again, it is a closed loop, so it must be integrated over the entire loop. The reasoning for this can be thought as the idea that moving charges develop magnetic fields in loops around the charge's direction of movement. Now, as I discussed, moving charges must produce magnetic fields. In addition, current is a way of describing charge movement. So, on the left hand side, we are taking the double integral of the current density $\VF{J}$ over the surface. So, primarily, the idea of integrating a density (something over area) over an area is essentially performing the function: $I = J*A$. The current density vector points in the direction of the current, in addition to being a density. The effect of the dot product effectively says I want to find the current enclosed, where current enclosed is the current that flows through our loop, parallel to the cross sectional area (as in the area vector). Let us move on to the other portion of Ampere's law: $\frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}$. This is where the connection between electric fields and magnetic fields is demonstrated. As I described before how moving charged develop magnetic fields, it is also shown that changing electric fields develop magnetic fields, just as changing magnetic fields induce electric fields. Conceived by Maxwell, this expression is represented by the double integral over the electric field dotting the area vector. So, we are finding each infinitesimal flux (electric field dot area) over the loop's cross section. By utilizing $\frac{\dif}{\dif t}$, we are describing the rate of change of this electric flux.\\
 \\
 \subsection{Electromagnetic Waves}
-What is so interesting about relating the electric and magnetic fields through Faraday's Law and Ampere's Law besides being beautiful? With these two equations, we can take the concepts: changing electric field induces changing magnetic field and vice versa. These concepts allow us to theoretically idealize the existence of waves. After all, we know that waves are like sinusoidal waves. We also know that if a changing electric field induces a magnetic field and a changing magnetic field induces an electric field, these fields should be a sinusoidal function. If they were not, they would not appear like a wave and/or the continuous induction would eventually break down. This is because if we need the rate of change of one to induce the other, we still need to be able to take the rate of change of the resulting field to get the original. That is a characteristic of the sin and cos functions, where the derivative of one yields the other and vice versa. This is the very basis of the electromagnetic wave. So, we know that the wave should look like a sinusoidal function, but how can we find a function of the wave? Because the electromagnetic wave is coupled, or has 2 wave-like parts (electric field and magnetic field), we can solve for 2 different equations: the function of the electric field and the function of the magnetic field. Lastly, a beautiful part of Faraday's law and Ampere's law is that they can allow us to solve for the time and spacial dependence of the field, which is characteristic of waves. This is what makes Maxwell's equations so beautiful. They describe everything there is to the nature of electric and magnetic fields and also bridge the connection between the two. 
+What is so interesting about relating the electric and magnetic fields through Faraday's Law and Ampere's Law besides being beautiful? With these two equations, we can take the concepts: changing electric field induces changing magnetic field and vice versa. These concepts allow us to theoretically idealize the existence of waves. After all, we know that waves are like sinusoidal waves. We also know that if a changing electric field induces a magnetic field and a changing magnetic field induces an electric field, these fields should be a sinusoidal function. If they were not, they would not appear like a wave and/or the continuous induction would eventually break down. This is because if we need the rate of change of one to induce the other, we still need to be able to take the rate of change of the resulting field to get the original. That is a characteristic of the sin and cos functions, where the derivative of one yields the other and vice versa. This is the very basis of the electromagnetic wave. So, we know that the wave should look like a sinusoidal function, but how can we find a function of the wave? Because the electromagnetic wave is coupled, or has 2 wave-like parts (electric field and magnetic field), we can solve for 2 different equations: the function of the electric field and the function of the magnetic field. Lastly, a beautiful part of Faraday's law and Ampere's law is that they can allow us to solve for the time and spacial dependence of the field, which is characteristic of waves. This is what makes Maxwell's equations so beautiful. They describe everything there is to the nature of electric and magnetic fields and also bridge the connection between the two.\\
+\begin{centering}
+\textbf{OPTIONAL}: Derivation of the electromagnetic wave function\\
+\end{centering}
+That being said, before deriving the expression for the fields, there are several important forms of the Maxwell equations that we will utilize. Rather than an alternate form, they are a more pure version in describing the relationship (where they truly highlight the concept in a simple manner). This is the differential form. Effectively, this form can be understood either by understanding the concept behind Maxwell's equations or mathematically deriving them via Stoke's theorem/Divergence Theorem and taking the derivative of both sides to eliminate the integration signs. Regardless:
+\begin{flalign*}
+\VF{\nabla} \cdot \VF{E} &= \frac{\rho}{\epsilon}\\
+\VF{\nabla} \cdot \VF{B} &= 0\\
+\VF{\nabla} \times \VF{E} &= -\frac{\partial \VF{B}}{\partial t}\\
+\VF{\nabla} \times \VF{B} &= \mu_0\left(\VF{J} + \epsilon_0\frac{\partial \VF{E}}{\partial t}\right) 
+\end{flalign*}
+A simple derivation of Gauss' differential form:
+\begin{align*}
+\oiint_{\partial \Omega} \VF{E} \cdot \VF{n} \dif S &= \frac{1}{\epsilon}\iiint_{\Omega} \rho \dif V\\
+\oiint_{\partial \Omega} \VF{E} \cdot \VF{n} \dif S &= \iiint_{\Omega} \VF{\nabla} \cdot \VF{E} \dif V \ \textit{Divergence Theorem}\\
+\iiint_{\Omega} \VF{\nabla} \cdot \VF{E} \dif V &= \frac{1}{\epsilon}\iiint_{\Omega} \rho \dif V\\
+\VF{\nabla} \cdot \VF{E} &= \frac{\rho}{\epsilon}
+\end{align*}
+A simple derivation of Ampere's differential form:
+\begin{align*}
+\oint_{\partial \Sigma} \VF{B} \cdot \dif \VF{s} &= \mu_0\left(\iint_\Sigma \VF{J} \cdot \dif \VF{S} + \epsilon_0\frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}\right)\\
+\oint_{\partial \Sigma} \VF{B} \cdot \dif \VF{s} &= \iint_{\Sigma} \VF{\nabla} \times \VF{B} \cdot \dif \VF{S} \ \textit{Stokes Theorem}\\
+\iint_{\Sigma} \VF{\nabla} \times \VF{B} \cdot \dif \VF{S} &= \mu_0\left(\iint_\Sigma \VF{J} \cdot \dif \VF{S} + \epsilon_0\frac{\dif}{\dif t}\iint_\Sigma \VF{E} \cdot \dif \VF{S}\right)\\
+\VF{\nabla} \times \VF{B} &= \mu_0\left(\VF{J} + \epsilon_0\frac{\partial \VF{E}}{\partial t}\right)
+\end{align*}
+Now, let us move on to the derivation. In order to develop an equation for a wave, it must have a time and spatial dependence. Thus, we can either solve for the electric field or magnetic field. Since it very similar either way, let us choose the electric field. In addition, let us say that our current density is not a function of time. Then:
+\begin{align*}
+\VF{\nabla} \times \VF{E} &= -\frac{\partial \VF{B}}{\partial t}\\
+\VF{\nabla} \times (\VF{\nabla} \times \VF{E}) &= \VF{\nabla} \times -\frac{\partial \VF{B}}{\partial t}
+\end{align*}
+However, we know that the gradient $\VF{\nabla}$ has no time dependence since it just an operator. Then:
+\begin{align*}
+\VF{\nabla} \times (\VF{\nabla} \times \VF{E}) &= -\frac{\partial}{\partial t}\left(\VF{\nabla} \times \VF{B}\right)s\\
+\VF{\nabla} \times \VF{B} &= \mu_0\left(\VF{J} + \epsilon_0\frac{\partial \VF{E}}{\partial t}\right)\\
+\VF{\nabla} \times (\VF{\nabla} \times \VF{E}) &= -\frac{\dif}{\dif t}\left(\mu_0\left(\VF{J} + \epsilon_0\frac{\partial \VF{E}}{\partial t}\right)\right)\\
+\VF{\nabla} \times (\VF{\nabla} \times \VF{E}) &= -\mu_0\epsilon_0\frac{\partial^2\VF{E}}{\partial^2 t}
+\end{align*}
+Now we need to utilize two vector properties:
+\begin{align*}
+\VF{\nabla} \times (\VF{\nabla} \times \VF{E}) &= \VF{\nabla}(\VF{\nabla}\cdot\VF{E}) - \VF{\nabla}^2\VF{E}\\
+\end{align*}
+We know that $\VF{\nabla}\cdot\VF{E}$ is $0$, since the divergence of the electric field is $0$ in a vacuum and charge free space (so $\rho = 0$). Then:
+\begin{align*}
+\VF{\nabla} \times (\VF{\nabla} \times \VF{E}) &= - \VF{\nabla}^2\VF{E}\\
+- \VF{\nabla}^2\VF{E} &= -\mu_0\epsilon_0\frac{\partial^2\VF{E}}{\partial^2 t}\\
+\mu_0\epsilon_0\frac{\partial^2\VF{E}}{\partial^2 t} - \VF{\nabla}^2\VF{E} &= 0
+\end{align*}
+We also know that $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$, so:
+\begin{align*}
+\frac{1}{c^2}\frac{\partial^2\VF{E}}{\partial^2 t} - \VF{\nabla}^2\VF{E} &= 0
+\end{align*}
+Hence, our wave equation for the electric field.
 %%%%%%%%%%%%%%%%%%%%%%%% MIGHT BE USEFUL TO INCLUDE A SECTION CONCEPTUALIZING FLUX BECAUSE IT IS AN ABSTRACT CONCEPT TO THOSE WHO HAVEN'T LEARNED IT. ALSO DISCUSS GRADIENT CONCEPTUALLY. %%%%%%%%%%%
 \end{document}
